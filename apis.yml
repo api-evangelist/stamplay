@@ -1,7 +1,30 @@
 aid: stamplay
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/stamplay.png
 name: Stamplay
-description: Stamplay is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Stamplay was a backend-as-a-service and API-integration platform — billed as
+  "Lego for developers" — founded in 2012 (Turin, Italy; later San Francisco)
+  and backed by 500 Global. It let developers assemble application backends by
+  visually wiring together third-party APIs, authentication providers, hosted
+  data objects, webhooks, and static site hosting on stamplayapp.com, driven by a
+  JavaScript SDK, a Node.js SDK, and the `stamplay` CLI. The product has been
+  discontinued: the company was acquired (widely reported as Apple, 2019), the
+  stamplay.com domain is now held via MarkMonitor and returns no HTTP response,
+  every source repository in the GitHub organization is archived, and the npm
+  SDK/CLI packages were last published in 2016. This API Evangelist profile
+  preserves the historical developer footprint (SDKs and CLI) rather than a live
+  API surface.
 url: https://raw.githubusercontent.com/api-evangelist/stamplay/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,17 +32,42 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-note: >-
+  Product discontinued; company acquired (widely reported as Apple, 2019).
+  Domain dead (registrar MarkMonitor); GitHub repos archived; npm packages last
+  published 2016. No live API surface.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Backend as a Service
+- API Integration
+- Low Code
+- Developer Tools
+- SDK
+- CLI
+- Defunct
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis: []
 common:
 - type: Website
   url: https://stamplay.com
+- type: GitHubOrganization
+  url: https://github.com/Stamplay
+- type: SDKs
+  url: packages/stamplay-packages.yml
+- type: Packages
+  url: packages/stamplay-packages.yml
+- type: CLI
+  url: cli/stamplay-cli.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1

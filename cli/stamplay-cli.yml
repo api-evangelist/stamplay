@@ -1,0 +1,43 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/Stamplay/stamplay-cli
+description: >-
+  The Stamplay command line tool (binary `stamplay`), captured verbatim from the
+  archived first-party repository README at https://github.com/Stamplay/stamplay-cli.
+  It administered a developer's Stamplay account and deployed static HTML/JS/CSS
+  hosting to stamplayapp.com. The npm package itself is catalogued in
+  packages/stamplay-packages.yml; this artifact enumerates its command surface.
+  The product is discontinued (company acquired, widely reported as Apple 2019);
+  the CLI and its backing service are no longer operational.
+docs: https://github.com/Stamplay/stamplay-cli#readme
+repo: https://github.com/Stamplay/stamplay-cli
+status: archived
+install:
+  npm: npm install -g stamplay-cli
+commands:
+  deploy:
+    - name: deploy
+      description: >-
+        Deploy the current app to Stamplay and create a new version, uploading
+        the directory named by the "public" attribute in stamplay.json. Requires
+        an index.html entry point.
+      flags: ['--message/-m "msg"']
+    - name: download
+      description: Download the current active version of an app (prompts for appId and apiKey).
+      flags: ['--proxy "address"']
+    - name: rollback
+      description: Restore a previously deployed version in production (pick from a list of prior deploys).
+  project:
+    - name: init
+      description: >-
+        Initialize an existing Stamplay app in the current directory, generating a
+        stamplay.json settings file. Safe to run in an existing repository.
+      flags: ['--proxy "address"']
+    - name: start
+      description: Serve the app on localhost (public folder served at http://localhost:8080).
+      flags: ['--port/-p', '--spa']
+    - name: open
+      description: Open the current Stamplay app's stamplayapp.com subdomain in a browser.
+  help:
+    - name: --help
+      description: List the available commands.

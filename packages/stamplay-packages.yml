@@ -1,0 +1,55 @@
+generated: '2026-07-21'
+method: searched
+source: https://registry.npmjs.org
+description: >-
+  First-party Stamplay client libraries and developer tooling, verified against
+  the public npm registry and the (now archived) Stamplay GitHub organization at
+  https://github.com/Stamplay. Author fields on all three packages resolve to
+  @stamplay.com email addresses, confirming first-party origin. Stamplay's
+  product was discontinued after the company was acquired (widely reported as
+  Apple, 2019); all packages were last published in 2016 and every source repo
+  is archived. Registry HTTP status recorded at fetch time (all 200 via
+  registry.npmjs.org). No PyPI, Maven, NuGet, RubyGems, Packagist, or crates.io
+  distributions were found.
+packages:
+  - language: javascript
+    registry: npm
+    name: stamplay-sdk
+    url: https://www.npmjs.com/package/stamplay-sdk
+    source: https://github.com/Stamplay/stamplay-js-sdk
+    install: npm install stamplay-sdk
+    version: 2.1.3
+    published: '2016-10-12'
+    license: null
+    official: true
+    status: archived
+    note: >-
+      Browser/JavaScript SDK for the Stamplay cloud platform. Base URL pattern
+      https://{appId}.stamplayapp.com (per-app subdomains, no longer reachable).
+  - language: javascript
+    registry: npm
+    name: stamplay
+    url: https://www.npmjs.com/package/stamplay
+    source: https://github.com/Stamplay/stamplay-nodejs-sdk
+    install: npm install stamplay
+    version: 1.0.8
+    published: '2016-09-30'
+    license: MIT
+    official: true
+    status: archived
+    note: Server-side Node.js SDK for the Stamplay cloud platform.
+  - language: javascript
+    registry: npm
+    name: stamplay-cli
+    url: https://www.npmjs.com/package/stamplay-cli
+    source: https://github.com/Stamplay/stamplay-cli
+    install: npm install -g stamplay-cli
+    version: 1.4.4
+    published: '2016-10-27'
+    license: null
+    official: true
+    status: archived
+    note: >-
+      Command line tool (binary `stamplay`) for administering apps and deploying
+      static hosting to stamplayapp.com. Command surface catalogued in
+      cli/stamplay-cli.yml.
