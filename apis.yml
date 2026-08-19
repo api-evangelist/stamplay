@@ -37,7 +37,7 @@ x-status-note: >-
   Product discontinued; company acquired (widely reported as Apple, 2019).
   Domain dead (registrar MarkMonitor); GitHub repos archived; npm packages last
   published 2016. No live API surface.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
