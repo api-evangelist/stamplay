@@ -1,0 +1,67 @@
+edges:
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/stamplay
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: stamplay
+      version: 1.0.8
+      released: '2022-06-26'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/stamplay
+      repo_leg: domain:stamplay.com
+      publisher_leg: email:stamplay.com
+      matched_by: domain
+    - name: stamplay-cli
+      version: 1.4.4
+      released: '2022-06-26'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/stamplay-cli
+      repo_leg: github-org:stamplay
+      publisher_leg: email:stamplay.com
+      matched_by: domain
+    - name: stamplay-sdk
+      version: 2.1.3
+      released: '2022-06-26'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/stamplay-sdk
+      repo_leg: domain:stamplay.com
+      publisher_leg: email:stamplay.com
+      matched_by: domain
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+generated: '2026-10-18'
+method: searched
+source:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
+checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
