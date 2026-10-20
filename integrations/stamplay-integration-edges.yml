@@ -47,6 +47,36 @@ edges:
     detected: '2026-10-18'
   detected_by: sweep-official-sdks.py
   first_seen: '2026-10-18'
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official CLI (npm registry)
+  evidence: https://www.npmjs.com/package/stamplay-cli
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public package index)
+    spec_file: null
+    packages:
+    - name: stamplay-cli
+      version: 1.4.4
+      released: '2022-06-26'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/stamplay-cli
+      cli: bin stamplay
+      repo_leg: github-org:stamplay
+      publisher_leg: email:stamplay.com
+      matched_by: domain
+    current: false
+    signal_note: 'the provider''s own command-line tool on a package manager: distribution, not an integration;
+      lapsed = no release in 24 months or deprecated / disabled by the manager'
+    detected_by: sweep-official-clis.py
+    detected: '2026-10-20'
+  detected_by: sweep-official-clis.py
+  first_seen: '2026-10-20'
 generated: '2026-10-18'
 method: searched
 source:
@@ -59,7 +89,12 @@ source:
 - https://rubygems.org/api/v1
 checked:
 - https://api.nuget.org/v3
+- https://cdn.winget.microsoft.com/cache
 - https://crates.io/api/v1
+- https://formulae.brew.sh/api/cask.json
+- https://formulae.brew.sh/api/formula.json
+- https://github.com/ScoopInstaller/Extras
+- https://github.com/ScoopInstaller/Main
 - https://proxy.golang.org
 - https://pypi.org/pypi
 - https://registry.npmjs.org
